@@ -6,7 +6,7 @@
 parent.postMessage("myevent", "*");
 ```
 
-#### On host end, list for the ifram epost message
+#### On host end, listen for the iframe post message
 ```js
 window.addEventListener("message", function (e) {
   if (e.origin !== "http://127.0.0.1:8080") return;
